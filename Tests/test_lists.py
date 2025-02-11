@@ -4,14 +4,11 @@ from Lists import *  # Assuming your assessment code is in a file named assessme
 class TestAssessment(unittest.TestCase):
 
     def test_part1(self):
-       
-        numbers = [] # Reset the list before each test
-
-        numbers = create_numbers_list() #Added to re-create initial list
+        numbers = create_numbers_list()
         self.assertEqual(numbers, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "Failed to create initial numbers list")
 
-        add_eleven() # function to add eleven to the end
-        self.assertEqual(numbers, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], "Failed to add 11 to the end")
+        add_eleven() 
+        self.assertEqual(numbers, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11], "Failed to add 11 to the end")
 
         insert_zero() # function to insert 0 at the beginning
         self.assertEqual(numbers, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], "Failed to insert 0 at the beginning")
