@@ -1,3 +1,5 @@
+from typing import List, Optional, Dict
+
 # Part 1: List Operations
 numbers = [] #Global variable that is changed in multiple functions
 def create_numbers_list():
@@ -5,40 +7,43 @@ def create_numbers_list():
     1.  Create a list named `numbers` containing the integers from 1 to 10 (inclusive).
         Return the numbers list
     """
-    return None #Replace with your code
+    
 
-def add_eleven():
-    """
-    2.  Add the number 11 to the end of the `numbers` list.
-    """
-    pass #Replace with your code
+    return 
 
-def insert_zero():
+def add_eleven(numbers_list): # Modified to accept numbers_list as argument
     """
-    3.  Insert the number 0 at the beginning of the `numbers` list.
+    2.  Add the number 11 to the end of the `numbers_list`.
     """
-    pass #Replace with your code
+    pass # Replace with your code
 
-def remove_five():
+def insert_zero(numbers_list): # Modified to accept numbers_list as argument
     """
-    4.  Remove the number 5 from the `numbers` list. (Remove the *value* 5, not the element at index 5).
+    3.  Insert the number 0 at the beginning of the `numbers_list`.
     """
-    pass #Replace with your code
+    pass # Replace with your code
+
+def remove_five(numbers_list): # Modified to accept numbers_list as argument
+    """
+    4.  Remove the number 5 from the `numbers_list`. (Remove the *value* 5, not the element at index 5).
+    """
+    pass # Replace with your code
+
 
 # Part 2: List Comprehension
 
-def create_even_numbers():
+def create_even_numbers(numbers_list): # Modified to accept numbers_list as argument
     """
     1.  Using list comprehension, create a new list named `even_numbers` containing only the even numbers
-        from the `numbers` list (created/modified in Part 1).
+        from the `numbers_list` (created/modified in Part 1).
         Return even_numbers
     """
     return None #Replace with your code
 
-def create_squared_numbers():
+def create_squared_numbers(numbers_list): # Modified to accept numbers_list as argument
     """
     2.  Using list comprehension, create a new list named `squared_numbers` containing the square of each number in
-        the `numbers` list. Return squared_numbers
+        the `numbers_list`. Return squared_numbers
     """
     return None #Replace with your code
 
